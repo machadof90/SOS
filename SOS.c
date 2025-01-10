@@ -13,10 +13,17 @@ int main()
     gpio_init(LED_G);
     gpio_set_dir(LED_G, GPIO_OUT);
     gpio_init(LED_B);
-    gio_set_dir(LED_B, GPIO_OUT);
+    gpio_set_dir(LED_B, GPIO_OUT);
 
 while (true){
-    
+    for(int i = 0; i < 3; i++){
+    gpio_put(LED_B, 1);
+    sleep_ms(200);
+    }
+
+
+
+    sleep_ms(3000);
 }
 
 
